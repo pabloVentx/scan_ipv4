@@ -18,10 +18,9 @@ git clone [https://github.com/pabloVentx/scan_ipv4.git](https://github.com/pablo
 cd scan_ipv4
 Dale permisos de ejecución al script:
 
-
+```bash
 chmod +x scan_ipv4.sh
 Ejecútalo (puedes editar la subred objetivo directamente en el bucle del script según el entorno donde te encuentres):
 
-```
+```bash
 ./scan_ipv4.sh
-```
