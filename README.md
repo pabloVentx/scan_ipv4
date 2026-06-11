@@ -17,13 +17,13 @@ Diseñado específicamente para fases de reconocimiento de hosts, laboratorios d
 
 git clone [https://github.com/pabloVentx/scan_ipv4.git](https://github.com/pabloVentx/scan_ipv4.git)
 
-2.Dale permisos de ejecución al script:
+2. **Dale permisos** de ejecución al script:
 
 ```bash
 chmod +x scan_ipv4.sh
 ```
 
-3.Ejecútalo (puedes editar la subred objetivo directamente en el bucle del script según el entorno donde te encuentres):
+3. **Ejecútalo** (Importante editar la subred objetivo directamente en el bucle del script según el entorno donde te encuentres, default: 10.10.10.X):
 
 ```bash
 ./scan_ipv4.sh
