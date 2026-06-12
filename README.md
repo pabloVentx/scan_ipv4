@@ -15,16 +15,18 @@ Diseñado específicamente para fases de reconocimiento de hosts, laboratorios d
 
 1. **Clona el repositorio** en tu máquina o copia el código directamente:
 
-git clone [https://github.com/pabloVentx/scan_ipv4.git](https://github.com/pabloVentx/scan_ipv4.git)
+```
+git clone https://github.com/pabloVentx/scan_ipv4.git
+```
 
 2. **Dale permisos** de ejecución al script:
 
-```bash
+```
 chmod +x scan_ipv4.sh
 ```
 
 3. **Ejecútalo** (Importante editar la subred objetivo directamente en el bucle del script según el entorno donde te encuentres, default: 10.10.10.X):
 
-```bash
+```
 ./scan_ipv4.sh
 ```
