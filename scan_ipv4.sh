@@ -1,12 +1,28 @@
 #!/bin/bash
 
-for i in {1..255}; do
-    (
-        timeout 1 bash -c "ping -c 1 10.10.10.$i >/dev/null 2>&1"
-        if [ $? -eq 0 ]; then
-            echo "10.10.10.$i" # Solo imprimimos la IP para poder ordenarla bien
-        fi
-    ) & 
-done | sort -V # Ordena las IPs en orden numérico
-
-wait
+{
+    for i in {1..255}; do
+        (
+            ping_output=$(ping -c 1 -W 1 192.168.1.$i 2>/dev/null)
+            
+            if [ $? -eq 0 ]; then
+                # Extraemos el TTL numérico
+                ttl=$(echo "$ping_output" | grep -oP "ttl=\d+" | awk -F= '{print $2}')
+                
+                # Clasificación avanzada por rangos de TTL
+                if [ "$ttl" -le 64 ]; then
+                    os="Linux"
+                elif [ "$ttl" -le 128 ]; then
+                    os="Windows"
+                elif [ "$ttl" -le 255 ]; then
+                    os="Router / Network Device (Cisco/Unix)"
+                else
+                    os="Desconocido"
+                fi
+                
+                echo "192.168.1.$i (TTL: $ttl -> $os)"
+            fi
+        ) &
+    done
+    wait
+} | sort -V
