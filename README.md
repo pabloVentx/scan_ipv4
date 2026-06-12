@@ -4,14 +4,14 @@ Muy rápido y optimizado.
 
 Diseñado específicamente para fases de reconocimiento de hosts, laboratorios de ciberseguridad (CTFs), etc... donde se requiere una de una enumeración manual, ligera y veloz. Útil si existen varios hosts a escanear en la máquina objetivo.
 
-## ✨ Características
+## Características
 
-* ⚡ **Ultra rápido (Multihilo):** Lanza las solicitudes de ping en segundo plano de forma paralela, logrando escanear una subred `/24` completa en cuestión de 1 o 2 segundos.
-* 🪟🐧 **Detección pasiva de SO (OS Fingerprinting):** Analiza el valor del TTL (*Time To Live*) de las trazas ICMP devueltos para identificar si el host objetivo es una máquina Linux (TTL ~64) o Windows (TTL ~128).
-* 🛠️ **Sin dependencias externas:** Utiliza exclusivamente utilidades nativas de sistemas Linux/Unix (`ping`, `bash`, `timeout`), ideal para entornos restringidos o *shells* limitadas.
-* 🧼 **Salida limpia y ordenada:** Implementa ordenamiento numérico natural mediante `sort -V`. Esto asegura que el listado de IPs se imprima en pantalla de forma consecutiva (ej. `.1`, `.2`, `.15`...) facilitando su lectura y la exportación a otras herramientas.
+* **Ultra rápido (Multihilo):** Lanza las solicitudes de ping en segundo plano de forma paralela, logrando escanear una subred `/24` completa en cuestión de 1 o 2 segundos.
+* **Detección pasiva de SO (OS Fingerprinting):** Analiza el valor del TTL (*Time To Live*) de las trazas ICMP devueltos para identificar si el host objetivo es una máquina Linux (TTL ~64) o Windows (TTL ~128).
+* **Sin dependencias externas:** Utiliza exclusivamente utilidades nativas de sistemas Linux/Unix (`ping`, `bash`, `timeout`), ideal para entornos restringidos o *shells* limitadas.
+* **Salida limpia y ordenada:** Implementa ordenamiento numérico natural mediante `sort -V`. Esto asegura que el listado de IPs se imprima en pantalla de forma consecutiva (ej. `.1`, `.2`, `.15`...) facilitando su lectura y la exportación a otras herramientas.
 
-## 🚀 Uso Rápido
+## Uso Rápido
 
 1. **Clona el repositorio** en tu máquina o copia el código directamente:
 
