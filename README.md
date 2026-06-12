@@ -2,7 +2,7 @@
 Script definido en bash usado para el descubrimiento de hosts activos en redes IPv4 mediante trazas ICMP con el comando "Ping".
 Muy rápido y optimizado.
 
-Diseñado específicamente para fases de reconocimiento de hosts en laboratorios de ciberseguridad (CTFs), etc... donde se requiere una de una enumeración manual, ligera y veloz. Útil si existen varios hosts a escanear en la máquina objetivo.
+Diseñado específicamente para fase de reconocimiento de hosts en laboratorios con varios hosts, etc... donde se requiere una de una enumeración manual, ligera y veloz. Útil si existen varios hosts a escanear en la máquina objetivo.
 
 ## Características
 
