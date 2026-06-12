@@ -1,4 +1,4 @@
-# scan_ipv4
+# Herramienta: scan_ipv4
 Script definido bash usado para el descubrimiento de hosts activos en redes IPv4 mediante trazas ICMP con el comando "Ping".
 Muy rápido y optimizado.
 
@@ -11,7 +11,7 @@ Diseñado específicamente para fases de reconocimiento de hosts, laboratorios d
 * **Sin dependencias externas:** Utiliza exclusivamente utilidades nativas de sistemas Linux/Unix (`ping`, `bash`, `timeout`), ideal para entornos restringidos o *shells* limitadas.
 * **Salida limpia y ordenada:** Implementa ordenamiento numérico natural mediante `sort -V`. Esto asegura que el listado de IPs se imprima en pantalla de forma consecutiva (ej. `.1`, `.2`, `.15`...) facilitando su lectura y la exportación a otras herramientas.
 
-## Uso Rápido
+## Instrucciones: Ejecución del Script
 
 1. **Clona el repositorio** en tu máquina o copia el código directamente:
 
