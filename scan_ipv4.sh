@@ -3,7 +3,7 @@
 {
     for i in {1..255}; do
         (
-            ping_output=$(ping -c 1 -W 1 192.168.1.$i 2>/dev/null)
+            ping_output=$(ping -c 1 -W 1 10.10.10.$i 2>/dev/null)
             
             if [ $? -eq 0 ]; then
                 # Extraemos el TTL numérico
@@ -20,7 +20,7 @@
                     os="Desconocido"
                 fi
                 
-                echo "192.168.1.$i (TTL: $ttl -> $os)"
+                echo "10.10.10.$i (TTL: $ttl -> $os)"
             fi
         ) &
     done
